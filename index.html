@@ -27,19 +27,20 @@
 
   <script>
     // Initialize the Jupiter widget
-    window.Jupiter.init({
-      displayMode: "widget",
-      endpoint: "https://mainnet.helius-rpc.com/?api-key=be32ec7a-04f6-4ef6-bb4c-50fd512d9304",
-      formProps: {
-        fixedOutputMint: true,
-        initialOutputMint: "6zz62u9yEoZTe2efnnCyyHx5UUaPiThCngVxdYi8i4ix",
-      },
+    window.addEventListener('load', (event) => {
+      window.Jupiter.init({
+        displayMode: "widget",
+        endpoint: "https://mainnet.helius-rpc.com/?api-key=be32ec7a-04f6-4ef6-bb4c-50fd512d9304",
+        formProps: {
+          fixedOutputMint: true,
+          initialOutputMint: "6zz62u9yEoZTe2efnnCyyHx5UUaPiThCngVxdYi8i4ix",
+        },
+      });
     });
   </script>
 </head>
 
 <body class="font-Montserrat bg-black">
-
   <!-- Header Section -->
   <nav class="nav-main ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
