@@ -22,6 +22,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
   <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
 
+  <!-- Attach the loading script in your <head /> -->
+  <script src='https://terminal.jup.ag/main-v2.js'></script>
+
+  <script>
+    // Initialize the Jupiter widget
+    window.Jupiter.init({
+      displayMode: "widget",
+      endpoint: "https://mainnet.helius-rpc.com/?api-key=be32ec7a-04f6-4ef6-bb4c-50fd512d9304",
+      formProps: {
+        fixedOutputMint: true,
+        initialOutputMint: "6zz62u9yEoZTe2efnnCyyHx5UUaPiThCngVxdYi8i4ix",
+      },
+    });
+  </script>
 </head>
 
 <body class="font-Montserrat bg-black">
